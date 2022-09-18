@@ -222,7 +222,7 @@ margin-left: 50px;
 .team  {background-color: var(--separation-color);}
 
 .name-and-profession{
-        padding: 30px 0px;    
+    padding: 30px 0px;    
 }
 .team .first-list {justify-content: space-between;}
 .first-list {
@@ -566,6 +566,7 @@ padding: 60px 0 60px;
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
+    visibility: hidden;
 }
 .modal {
     position: absolute;

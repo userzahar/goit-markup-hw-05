@@ -52,7 +52,7 @@
                 <section class="hero background-hero thumb">
 
                     <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-                    <button type="button" class="hero-btn" aria-label="Замовити послугу">Замовити послугу</button>
+                    <button type="button" class="hero-btn"  aria-label="Замовити послугу" data-modal-open>Замовити послугу</button>
                         
                 </section>
             </div>
@@ -378,10 +378,11 @@
                 </div>
             </div>
         </footer>
-        <div class="backdrop is-hidden">
+        <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <button type="button" class="close">X</button>
+                <button type="button" aria-label="закрити вікно" class="close" data-modal-close>X</button>
             </div>
         </div>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
