@@ -127,10 +127,13 @@ margin-left: 50px;}
     color: inherit; 
     font-weight: 500; 
     line-height: 1.2; 
-    letter-spacing: 0.02em;}
-.nav-items:hover, 
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);    
+}
+.nav-items:hover>.link, 
 .cantacts-mail:hover, 
-.contacts-tel:hover {color:var(--accent-color);}
+.contacts-tel:hover {
+    color:var(--accent-color);}
 .nav-items:focus, 
 .cantacts-mail:focus, 
 .contacts-tel:focus { color:var(--accent-color);}
@@ -261,13 +264,17 @@ padding: 60px 0 60px;
 .logo-footer {color: var(--pure-white-color);}
 .address {font-style:normal}
 .address li:not(:last-child) {margin-bottom: 9px;}
- .address-map {
+.address-map {
     color:var(--pure-white-color);
-    line-height: 1.7;}
+    line-height: 1.7;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
 .address-mail, 
 .address-tel {
     color: var(--transparent-white);
-    line-height: 1.7;}
+    line-height: 1.7;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);    
+}
 .address-map:hover, 
 .address-mail:hover, 
 .address-tel:hover {color: var(--accent-color);}
@@ -301,6 +308,10 @@ padding: 60px 0 60px;
     font-family: inherit;
     border: 1px solid var(--separation-color); 
     border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+                color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter-btn:hover {
     background-color: var(--accent-color); 
@@ -328,6 +339,7 @@ padding: 60px 0 60px;
 }
 .project-link {
     display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-link:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -340,7 +352,6 @@ padding: 60px 0 60px;
     border-left: 1px solid var(--border-color); 
     border-right: 1px solid var(--border-color); 
     border-bottom: 1px solid var(--border-color);
-    z-index: 10;
 }
 
 .project-title { 
@@ -378,6 +389,7 @@ padding: 60px 0 60px;
     display:flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-contact-link:hover {
     background-color: var(--accent-color);
@@ -401,6 +413,7 @@ padding: 60px 0 60px;
     height: 92px;   
     border: 1px solid var(--icon-color);
     border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .costumers>li:hover {
     border-color: var(--accent-color);
@@ -412,6 +425,7 @@ padding: 60px 0 60px;
     width: 100%;
     height: 100%;
     fill: var(--icon-color);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-item:hover {
     border-color: var(--accent-color);
@@ -440,6 +454,7 @@ padding: 60px 0 60px;
     border-radius: 50%;
     background-color: var(--footer-icon-color);
     fill: var(--pure-white-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .invite-link:hover {
     background-color: var(--accent-color);
@@ -496,6 +511,7 @@ padding: 60px 0 60px;
     opacity: 0;
     width: 100%;
     height: 100%;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } 
 .project-link:hover .project-thumb::before {
     opacity: 0.9;
