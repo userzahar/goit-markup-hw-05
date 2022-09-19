@@ -569,7 +569,7 @@ padding: 60px 0 60px;
     height: 581px;
     background-color: var(--pure-white-color);
     border-radius: 4px;
-    transform:translate(-50%, -50%) scalex(0) scaley(0);  
+    transform:translate(-50%, -50%) scalex(1) scaley(1);  
     animation: modal-first 2s linear 10ms backwards;
     transform-origin: center center;
     opacity: 1;
