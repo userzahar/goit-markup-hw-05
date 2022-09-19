@@ -569,11 +569,17 @@ padding: 60px 0 60px;
     height: 581px;
     background-color: var(--pure-white-color);
     border-radius: 4px;
-    transform:translate(-50%, -50%) scale(1);  
+    transform:translate(-50%, -50%) scalex(0) scaley(0);  
     animation: modal-first 2s linear 10ms backwards;
     transform-origin: center center;
     opacity: 1;
 }
+@keyframes modal-first {
+    0% {transform:scale(0) translate(-30%,-30%)}
+    50% {transform:scaleX(1) translate(-51%,-51%)}
+    100% {transform:scaley(1) translate(-50%,-50%)}
+
+} 
 .close {
     position:absolute;
     right: 8px;
@@ -585,19 +591,15 @@ padding: 60px 0 60px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
 }
-.close:active {
-    animation: data-modal-close 2s linear 10ms reverse backwards;
-}
-@keyframes modal-first {
-    0% {transform:scale(0) translate(-30%,-30%)}
-    50% {transform:scale(1.5) translate(-51%,-51%)}
-    100% {transform:scale(1) translate(-50%,-50%)}
 
-} 
-@keyframes data-modal-close
+
+/* .close:active {
+    animation: data-modal-close 2s linear 10ms reverse backwards;
+} */
+/* @keyframes data-modal-close
 {
     0% {transform:scale(0) translate(-100%,-100%)}
     50% {transform:scale(1.5) translate(-10%,-10%)}
     100% {transform:scale(1) translate(-50%,-50%)}
 
-}
+} */
