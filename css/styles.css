@@ -591,16 +591,34 @@ padding: 60px 0 60px;
 } 
 .close {
     position:absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
     right: 8px;
     top:8px;
     width: 30px;
     height: 30px;
+    border-radius: 50%;
     cursor: pointer;
     background-color: var(--pure-white-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
+    fill: var(--pure-black-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-button.close:hover .modal {
+.close:hover,
+.close:focus {
+    background-color: var(--accent-color);
+}
+.close>svg {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    stroke: var(--pure-black-color);
+    display: block;
+    color: var(--pure-black-color);
+}
+
+.close:hover .modal {
     animation: data-modal-close 2500ms linear;
 }
 
