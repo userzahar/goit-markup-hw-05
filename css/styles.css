@@ -600,7 +600,7 @@ padding: 60px 0 60px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
 }
-/* .close:active .modal {
+button.close:hover .modal {
     animation: data-modal-close 2500ms linear;
 }
 
@@ -613,4 +613,4 @@ padding: 60px 0 60px;
     66% {transform:scale(0.01,0) translate(-50%,-50%)}
     100% {transform:scale(0) translate(-49%,-49%)}
 
-} */
+}
